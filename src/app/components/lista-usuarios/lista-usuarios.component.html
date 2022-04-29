@@ -1,0 +1,17 @@
+<h1>Usuarios activos</h1>
+<hr>
+<ul class="list-group">
+  <li class="list-group-item"
+  *ngFor="let usuario of usuariosActivosObs | async">
+  {{ usuario.nombre }}
+  <button type="button" class="badge btn btn-primary">
+    {{ usuario.sala }}
+  </button>
+  <br>
+  <button type="button" class="badge btn btn-info">
+    {{ usuario.id }}
+  </button>
+
+  </li>
+
+</ul>
